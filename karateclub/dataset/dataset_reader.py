@@ -20,7 +20,7 @@ class GraphReader(object):
     def __init__(self, dataset: str = "wikipedia"):
         assert dataset in [
             "wikipedia",
-            "twitch",
+            "twitch1",
             "github",
             "facebook",
             "lastfm",
