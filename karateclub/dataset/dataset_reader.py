@@ -27,7 +27,7 @@ class GraphReader(object):
             "deezer",
         ], "Wrong dataset."
         self.dataset = dataset
-        self.base_url = "https://github.com/benedekrozemberczki/karateclub/raw/master/dataset/node_level/"
+        self.base_url = "https://github.com/calixtec/karateclub/tree/master/dataset/node_level"
 
     def _pandas_reader(self, bytes):
         """
