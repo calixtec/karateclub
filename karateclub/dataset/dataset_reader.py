@@ -20,14 +20,15 @@ class GraphReader(object):
     def __init__(self, dataset: str = "wikipedia"):
         assert dataset in [
             "wikipedia",
-            "twitch1",
+            "twitch",
             "github",
             "facebook",
             "lastfm",
             "deezer",
+            "featfinders",
         ], "Wrong dataset."
         self.dataset = dataset
-        self.base_url = "https://github.com/calixtec/karateclub/tree/master/dataset/node_level"
+        self.base_url = "https://github.com/calixtec/karateclub/raw/master/dataset/node_level/"
 
     def _pandas_reader(self, bytes):
         """
