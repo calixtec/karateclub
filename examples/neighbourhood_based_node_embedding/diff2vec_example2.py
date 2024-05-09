@@ -5,7 +5,7 @@ from sklearn.metrics import roc_auc_score
 from sklearn.linear_model import LogisticRegression
 
 
-reader = GraphReader("twitch")
+reader = GraphReader("featfinders")
 
 
 graph = reader.get_graph()
@@ -27,4 +27,4 @@ y_hat = downstream_model.predict_proba(X_test)[:, 1]
 auc = roc_auc_score(y_test, y_hat)
 print('AUC: {:.4f}'.format(auc))
 graph_reader = GraphReader(dataset="wikipedia")
-#graph_reader.display_graph()
+#graph_reader.display_graph(
