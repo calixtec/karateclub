@@ -28,7 +28,8 @@ class GraphReader(object):
             "featfinders",
         ], "Wrong dataset."
         self.dataset = dataset
-        self.base_url = "https://github.com/calixtec/karateclub/raw/master/dataset/node_level/"
+        path = self.base_url = "https://github.com/calixtec/karateclub/raw/master/dataset/node_level/"
+        print("URL:", path)
 
     def _pandas_reader(self, bytes):
         """
@@ -94,7 +95,7 @@ class GraphSetReader(object):
 
     def __init__(self, dataset: str = "reddit10k"):
         self.dataset = dataset
-        self.base_url = "https://github.com/benedekrozemberczki/karateclub/raw/master/dataset/graph_level/"
+        self.base_url = "https://github.com/calixtec/karateclub/raw/master/dataset/node_level/"
 
     def _pandas_reader(self, bytes):
         """
